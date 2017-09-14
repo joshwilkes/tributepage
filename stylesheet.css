@@ -1,12 +1,19 @@
 body {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
+    background: #191919;
+}
+
+figure {
+  margin: 0 0 1em 0;
+  padding: 0;
 }
 
 .header {
-    margin: 0 0 4em 0;
-    padding: 0 0 1em 0;
-    border-bottom: 1px solid #808080; 
+    margin: 0 0 0 0;
+    padding: 1em 0 1em 0;
+    /*border-bottom: 1px solid #808080;*/
+    background: #d31435;
 }
 
 .header::after {
@@ -19,4 +26,37 @@ body {
     width: 60%;
     float: left;
     padding-right: 1em;
+}
+
+#header-pic {
+    width: 25%;
+    float: left;
+    padding: 5px;
+    text-align: center;
+}
+
+main {
+    width: 85%;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+article {
+    width: 70%;
+    float: left;
+    background-color: #FFFFFF;
+    padding-right: 1em;
+}
+
+aside {
+    width: 30%;
+    float: left;
+    padding: .5em;
+}
+
+h1 {
+  font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+  text-align: center;
 }
