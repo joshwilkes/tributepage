@@ -36,9 +36,16 @@ figure {
 }
 
 main {
+    margin: 0 0 1em 0;
     width: 85%;
     margin: 0 auto;
     background: #FFFFFF;
+}
+
+main::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 article {
@@ -53,6 +60,14 @@ aside {
     float: left;
     padding: .5em;
 }
+
+footer {
+  width: 100%;
+  float: left;
+  text-align: center;
+  color: #FFF;
+}
+
 
 h1 {
   font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
