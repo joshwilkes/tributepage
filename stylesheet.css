@@ -1,7 +1,19 @@
+*, *::after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
 body {
     width: 100%;
     margin: 0 auto;
     background: #191919;
+    font-family: 'Open Sans', sans-serif; 
 }
 
 figure {
@@ -9,11 +21,21 @@ figure {
   padding: 0;
 }
 
+img {
+    width: 100%;
+}
+
 .header {
-    margin: 0 0 0 0;
-    padding: 1em 0 1em 0;
-    /*border-bottom: 1px solid #808080;*/
+    /*margin: 1em 0 1em 0;
+    display: block;*/
+    /*padding: 1em 0 1em 0;*/
     background: #d31435;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.header figure img {
+    height: 10%;
 }
 
 .header::after {
@@ -22,24 +44,11 @@ figure {
     display: table;
 }
 
-#header-text {
-    width: 60%;
-    float: left;
-    padding-right: 1em;
-}
-
-#header-pic {
-    width: 25%;
-    float: left;
-    padding: 5px;
-    text-align: center;
-}
-
 main {
-    margin: 0 0 1em 0;
     width: 85%;
     margin: 0 auto;
     background: #FFFFFF;
+    margin-bottom: 2em;
 }
 
 main::after {
@@ -49,16 +58,54 @@ main::after {
 }
 
 article {
-    width: 70%;
+    width: 60%;
     float: left;
     background-color: #FFFFFF;
-    padding-right: 1em;
+    padding: 1em;
 }
 
 aside {
-    width: 30%;
+    width: 40%;
     float: left;
     padding: .5em;
+}
+
+.gallery {
+    margin: auto;
+    width: 85%;
+    padding: 0;
+    color: white;
+}
+
+.gallery::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.gallery-header {
+    width: 100%;
+    float: left;
+    background-color: #d31435;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.gallery-left, .gallery-right {
+    float: left;
+    margin-bottom: 2em;
+    width: 50%;
+    text-align: center;
+}
+
+.gallery-left {
+    padding-right: 5em;
+}
+
+.gallery-left figure img, .gallery-right figure img {
+    width: 500px;
+    height: 300px;
 }
 
 footer {
@@ -68,9 +115,14 @@ footer {
   color: #FFF;
 }
 
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 h1 {
-  font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
+  font: 200 100px/0.8 'Cookie', Helvetica, sans-serif;
   color: #fff;
   text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
   text-align: center;
